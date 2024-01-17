@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(100, 120, 83);
+  margin: 0;
+  display: grid;
+  align-content: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: Impact, fantasy;
+  color: rgb(255, 137, 137);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  color: rgb(245, 164, 50);
+  max-width: 30em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+ul {
+  margin: 0 auto;
+  padding: 0;
+}
+
+a {
+  color: white;
+}

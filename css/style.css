@@ -62,6 +62,24 @@ header a:hover {
   margin: 0;
 }
 
+/* CUSTOM HOME PAGE STYLING */
+
+.page-home header {
+  position: absolute;
+  width: 100%;
+  background-color: rgb(79, 98, 69);
+}
+
+.page-home .hero {
+  background-image: url("https://media.giphy.com/media/f9vsEmv4NA9ry/giphy.gif");
+  background-position: left top;
+  background-size: constrain;
+  background-repeat: no-repeat;
+  padding: 10em 1em 6em 1em;
+  background-color: #fff;
+  color: black;
+}
+
 /* MAIN */
 main {
   background: rgba(172, 200, 177, 0.5);

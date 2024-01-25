@@ -64,7 +64,7 @@ header a:hover {
 
 /* MAIN */
 main {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(172, 200, 177, 0.5);
 }
 
 /* FOOTER */
@@ -86,6 +86,33 @@ footer {
 .social-nav a {
   display: block;
   padding: 1em;
+}
+
+/* LAYOUT */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 3m 1em;
+}
+
+/* SIDEBAR/ASIDE */
+aside {
+  padding: 2em 0;
+}
+
+@media (min-width: 768px) {
+  .two-col-sidebar {
+    display: grid;
+    grid-template-columns: 20em auto;
+  }
+  .two-col-sidebar aside {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0 3em 2em 0;
+    padding: 0.3em 2em 0 0;
+  }
 }
 
 /* HERO */
@@ -127,6 +154,55 @@ footer {
 .courses h3 {
   text-align: center;
   color: rgb(245, 105, 105);
+}
+
+/* STYLING FOR SUB PAGES */
+.page-sub .hero {
+  background-color: rgb(108, 131, 95);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* COURSE PAGES WITH MULTIPLE PROJECT LISTS */
+.coursework {
+  padding: 3em 1em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project {
+  margin: 2em;
+}
+
+/* CODE BLOCKS */
+
+pre code {
+  width: 100%;
+  display: block;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 1em 3em;
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+
+.markup-box {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 1em 3em;
+  margin-bottom: 1em;
+}
+
+/* DEFINITION LISTS */
+
+dt {
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+dd {
+  margin: 0;
 }
 
 /* FOR DEV PURPOSES */

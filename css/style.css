@@ -67,22 +67,19 @@ header a:hover {
 .page-home header {
   position: absolute;
   width: 100%;
-  background-color: rgb(79, 98, 69);
+  background-color: rgb(0, 0, 0, 0);
 }
 
 .page-home .hero {
-  background-image: url("https://media.giphy.com/media/f9vsEmv4NA9ry/giphy.gif");
-  background-position: left top;
-  background-size: constrain;
-  background-repeat: no-repeat;
-  padding: 10em 1em 6em 1em;
-  background-color: #fff;
-  color: black;
+  background-image: url("https://i.pinimg.com/originals/b2/80/5c/b2805cfc4af9d458f2c5151370123941.gif");
+  background-size: cover;
+  background-position: center;
+  padding: 24vh 1em;
 }
 
 /* MAIN */
 main {
-  background: rgba(172, 200, 177, 0.5);
+  background: rgb(231, 231, 231);
 }
 
 /* FOOTER */
@@ -99,6 +96,7 @@ footer {
   list-style: none;
   margin: 0;
   padding: 0;
+  background-color: rgb(85, 105, 74);
 }
 
 .social-nav a {
@@ -146,7 +144,7 @@ aside {
   line-height: 1;
   text-transform: uppercase;
   margin: 0 auto;
-  color: rgb(235, 143, 76);
+  color: rgb(255, 255, 255, 0.8);
   font-family: Gill Sans, sans-serif;
 }
 
@@ -154,6 +152,7 @@ aside {
   max-width: 30em;
   margin: 1em auto;
   font-family: Georgia, serif;
+  color: white;
 }
 
 /* COURSES */
@@ -171,7 +170,7 @@ aside {
 
 .courses h3 {
   text-align: center;
-  color: rgb(245, 105, 105);
+  color: rgb(79, 98, 69);
 }
 
 /* STYLING FOR SUB PAGES */
@@ -221,6 +220,19 @@ dt {
 
 dd {
   margin: 0;
+}
+
+/* NOTES PAGE SCROLLBAR FIX FOR PRE & CODE */
+pre,
+code {
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+}
+/* NOTES PAGE SCROLLBAR FIX FOR GISTS */
+@media (min-width: 768px) and (max-width: 910px) {
+  .gist {
+    max-width: 450px;
+  }
 }
 
 /* FOR DEV PURPOSES */

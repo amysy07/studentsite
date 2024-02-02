@@ -87,6 +87,8 @@ main {
 footer {
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   padding: 1em;
+  background-color: rgb(85, 105, 74);
+  background-image: url("https://i.pinimg.com/564x/32/6b/b9/326bb9c95707cd4c5221d7cd3213e9c5.jpg");
 }
 
 /* SOCIAL NAV */
@@ -96,7 +98,6 @@ footer {
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: rgb(85, 105, 74);
 }
 
 .social-nav a {

@@ -173,6 +173,8 @@ aside {
 .courses h3 {
   text-align: center;
   color: rgb(79, 98, 69);
+  font-size: 1.7em;
+  font-family: Gill Sans, sans-serif;
 }
 
 .courses .cards {
@@ -193,7 +195,7 @@ aside {
   background-image: url("https://i.pinimg.com/564x/09/c1/39/09c1395111a0a1950e4ed00893d8cd60.jpg");
   background-size: cover;
   border-radius: 10px;
-  padding: 3em 2em;
+  padding: 2.5em 2em;
   /* margin: 1em; */
   text-decoration: none;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
@@ -202,10 +204,12 @@ aside {
 .courses .cards span {
   display: block;
   font-size: 2em;
+  line-height: 1.6;
 }
 
 .courses .cards li {
   max-width: 100%;
+  font-family: Georgia, serif;
 }
 
 /* STYLING FOR SUB PAGES */

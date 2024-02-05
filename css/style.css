@@ -147,7 +147,9 @@ aside {
   text-transform: uppercase;
   margin: 0 auto;
   color: rgb(255, 255, 255, 0.8);
-  font-family: Gill Sans, sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .hero p {
@@ -174,7 +176,9 @@ aside {
   text-align: center;
   color: rgb(79, 98, 69);
   font-size: 1.3em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .courses .cards {

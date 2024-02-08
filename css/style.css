@@ -4,6 +4,9 @@
 }
 body {
   margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }
 
 /* GLOBAL COLORS */
@@ -359,7 +362,7 @@ code {
   }
 }
 
-/* // Colors */
+/* // Colors AND CARD TEST */
 color-primary-white: rgb(240, 240, 240);
 
 main {

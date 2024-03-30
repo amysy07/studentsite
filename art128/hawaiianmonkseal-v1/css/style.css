@@ -72,10 +72,6 @@ h5 {
   font-size: 1.125em;
   line-height: 1.4;
 }
-h6 {
-  font-size: 1em;
-  line-height: 1.5;
-}
 
 /* PARAGRAPHS */
 
@@ -349,6 +345,11 @@ body.demo::before {
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
 }
+
+footer {
+  display: block;
+}
+
 /* LOGO AREA */
 .site-id h1 {
   font-size: 1.5em;
@@ -510,9 +511,9 @@ form input[type="submit"] {
 }
 
 .site-header.sticky {
-  position: fixed;
+  position: absolute;
   width: 100%;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0);
 }
 .site-header.sticky + main {
   padding-top: 3em;
@@ -532,4 +533,38 @@ form input[type="submit"] {
   #contact {
     padding-bottom: 20em;
   }
+}
+
+/* WAIKIKI AQUARIUM STYLING STARTS HERE */
+
+.site-id h1 img {
+  max-width: 80px;
+}
+
+.site-main .hero {
+  background-image: url(../img/monksealhero.gif);
+  background-size: cover;
+  background-position: center;
+  padding: 23vh;
+
+  max-width: 100%;
+  height: auto;
+}
+
+.column.one-half {
+  position: relative;
+}
+
+.about-trivia {
+  position: absolute;
+  left: 100px;
+  top: 300px;
+  color: white;
+  width: 200px;
+}
+
+.parent {
+  background-image: url("../img/napalicoast.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
 }

@@ -348,6 +348,17 @@ body.demo::before {
 
 footer {
   display: block;
+  padding: 1em;
+  background-color: rgba(0, 14, 59, 0.879);
+}
+
+.social-nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.social-nav li {
+  margin: 0 10px;
 }
 
 /* LOGO AREA */
@@ -537,7 +548,8 @@ form input[type="submit"] {
 
 /* WAIKIKI AQUARIUM STYLING STARTS HERE */
 
-.site-id h1 img {
+.site-id h1 img,
+.social-nav img {
   max-width: 80px;
 }
 
@@ -564,7 +576,7 @@ form input[type="submit"] {
 }
 
 .parent {
-  background-image: url("../img/napalicoast.gif");
+  background-color: rgba(0, 0, 255, 0.5);
   background-size: cover;
   background-repeat: no-repeat;
 }

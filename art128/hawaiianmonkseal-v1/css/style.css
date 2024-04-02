@@ -35,7 +35,7 @@ body {
   font-size: 87.5%; /* 14 px */
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
-  color: rgba (0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 /* HEADINGS 
@@ -198,40 +198,6 @@ img {
 }
 
 /* BUTTONS */
-.button,
-button,
-form input[type="submit"] {
-  font-size: inherit;
-  line-height: 1;
-  background-color: rgba(0, 0, 255, 1);
-  border: 1px solid rgba(0, 0, 255, 1);
-  color: rgba(255, 255, 255, 1);
-  padding: 1em;
-  display: inline-block;
-  margin: 0.5em 0.5em 0.5em 0;
-  text-align: center;
-  border-radius: 0.5em;
-}
-
-.button:hover,
-button:hover,
-form input[type="submit"]:hover {
-  background-color: rgba(0, 0, 153, 1);
-  border-color: rgba(0, 0, 153, 1);
-  color: rgba(255, 255, 255, 1);
-  text-decoration: none;
-}
-
-.button.alt {
-  background-color: transparent;
-  color: rgba(0, 0, 153, 1);
-}
-
-.button.alt:hover {
-  background-color: rgba(0, 0, 153, 1);
-  color: rgba(255, 255, 255, 1);
-}
-
 /* LAYOUT */
 
 /* SIMPLE RESET */
@@ -267,44 +233,6 @@ body {
   }
   .container {
     max-width: 1200px;
-  }
-}
-
-/* FOR DEMO ONLY */
-
-body.demo {
-  padding-top: 2em;
-}
-
-body.demo::before {
-  content: "Small Screen (Mobile) Less Than 768px";
-  background-color: #993333;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  text-align: center;
-  color: white;
-  padding: 0.5em;
-}
-
-@media (min-width: 768px) {
-  body.demo::before {
-    background-color: #bcb83d;
-    content: "Midsize (Tablet) Screen Less Than 768px - 1050px";
-  }
-}
-
-@media (min-width: 1050px) {
-  body.demo::before {
-    background-color: #693;
-    content: "Large (Notebook) Screen Less Than 1050px - 1250px";
-  }
-}
-
-@media (min-width: 1250px) {
-  body.demo::before {
-    background-color: orange;
-    content: "XLarge (Desktop) Screen Less Than 1250px +";
   }
 }
 
@@ -344,14 +272,6 @@ body.demo::before {
     margin-left: auto;
     margin-right: auto;
   }
-}
-
-/* FOR DEMO ONLY */
-
-.demo .column {
-  background: rgba(0, 0, 0, 0.2);
-  padding: 1em;
-  text-align: center;
 }
 
 /* SITE STRUCTURE */
@@ -435,6 +355,23 @@ footer {
   display: none;
 }
 
+/* ADDRESS STYLING */
+
+address {
+  color: white;
+  font-style: normal;
+  line-height: 1.6;
+  font-size: 0.8em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+address i {
+  padding-right: 0.75em;
+}
+
+/* SITE NAV ANIMATION */
+
 .site-nav a.dropdown-toggle {
   position: relative;
 }
@@ -456,6 +393,7 @@ footer {
   visibility: visible;
   transform: scaleX(0.7);
 }
+
 /* SITE MAIN */
 
 /* SECTIONS */
@@ -503,7 +441,7 @@ section {
     text-align: center;
   }
   .toggle-nav .site-nav a:hover {
-    background-color: rgba(0, 0, 153, 1);
+    background-color: rgba(247, 247, 247, 0.27);
     color: white;
   }
   .toggle-nav[data-navstate="closed"] ul {
@@ -520,7 +458,7 @@ section {
 
 .toggle-nav .site-nav .menu-button.navicon {
   border: none;
-  color: rgba(255, 255, 255, 0);
+  color: rgba(232, 223, 223, 0);
   padding: 0;
 }
 
@@ -600,13 +538,13 @@ form input[type="submit"] {
   padding-top: 3em;
 } */
 
-#about {
+/* #about {
   background: rgba(0, 0, 0, 0.05);
 }
 
 #contact {
   background: rgba(0, 0, 0, 0.01);
-}
+} */
 
 /* Vertical Media Query add height/paddint to ottom of contact section only for lg screens */
 
@@ -628,7 +566,6 @@ form input[type="submit"] {
   background-size: cover;
   background-position: center;
   padding: 23vh;
-
   max-width: 100%;
   height: auto;
 }
@@ -655,7 +592,33 @@ form input[type="submit"] {
 
 .parent {
   padding-top: 30em;
-  background-color: rgba(0, 0, 255, 0.5);
+  background-color: rgba(169, 169, 169, 0.5);
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.card-title,
+.card-text {
+  color: white;
+  text-align: center;
+}
+
+.card-text i {
+  padding-left: 0.5em;
+}
+
+#quickfacts i {
+  padding-right: 0.7em;
+  color: rgb(20, 127, 135);
+}
+
+#quickfacts li {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card-img-top {
+  border-radius: 10px;
 }

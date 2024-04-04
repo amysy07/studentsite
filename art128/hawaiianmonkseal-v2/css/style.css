@@ -616,10 +616,10 @@ form input[type="submit"] {
 
 /* BACKGROUND NAPALI COAST IMAGE */
 
-.parent {
-  padding-top: 30em;
-  background-image: url(../img/napalicoast.gif);
-  background-size: cover;
+.bg-mountains-to-ocean {
+  padding-top: 70%;
+  background-color: rgb(107, 107, 107);
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 

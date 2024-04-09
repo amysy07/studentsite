@@ -24,7 +24,7 @@
                 # site-id (LOGO)
             #FOOTER
             #SECTIONS
-            #SUB PAGES
+              #ABOUT
         #SITE NAVIGATION
             #TOGGLE-NAV (Default for Small Screens)
 --------------------------------- */
@@ -63,6 +63,7 @@ h2 {
   font-weight: 700;
   font-style: normal;
   padding-bottom: 1em;
+
 }
 
 h2::after {
@@ -578,13 +579,20 @@ form input[type="submit"] {
   position: relative;
 }
 
+/* ABOUT SECTION STYLING */
+
+#about {
+  padding-top: 8em;
+}
+
 .bg-mountains-to-ocean {
   padding-top: 20%;
   background-color: rgba(5, 5, 86, 0.5);
   background-size: cover;
   background-repeat: no-repeat;
 }
-s .card-img-top {
+
+.card-img-top {
   border-radius: 10px;
 }
 
@@ -597,6 +605,7 @@ s .card-img-top {
 .card-text i {
   padding-left: 0.5em;
 }
+
 .column.one-third .card {
   position: relative;
   text-align: center;
@@ -616,6 +625,7 @@ s .card-img-top {
   transform: translate(-50%, -50%);
   padding-bottom: 0;
 }
+
 #quickfacts i {
   color: white;
   display: block;
@@ -704,6 +714,17 @@ s .card-img-top {
   transform-origin: 60% 80%;
 }
 
+@media (max-width: 767px) {
+  .about-picture {
+    /* justify-content: center; */
+    aspect-ratio: 5 / 6;
+    font-size: 1.5em;
+  }
+  .about-top-image {
+    transform: scale(1.3);
+  }
+}
+
 .about-trivia {
   text-align: center;
   color: white;
@@ -718,20 +739,32 @@ s .card-img-top {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  width: 100%;
+  justify-content: space-around;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   aspect-ratio: 2 / 3;
 }
 
+@media (max-width: 767px) {
+  .quickfacts-picture {
+    /* justify-content: center; */
+    aspect-ratio: 5 / 6;
+    font-size: 1.5em;
+    background-position: center top;
+  }
+}
+
+#quickfacts .column.one-third {
+}
+
 .quickfacts-top-image {
-  transform: scale(1.3);
+  transform: scale(1.4);
   transform-origin: 60% 150%;
 }
 
 .quickfacts-trivia {
   text-align: center;
   color: white;
-  padding: 1em 1em 5em 1em;
+  padding: 1em 2em 1em 2em;
 }

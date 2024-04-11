@@ -714,22 +714,31 @@ form input[type="submit"] {
   transform-origin: 60% 80%;
 }
 
-@media (max-width: 767px) {
-  .about-picture {
-    /* justify-content: center; */
-    aspect-ratio: 5 / 6;
-    font-size: 1.5em;
-  }
-  .about-top-image {
-    transform: scale(1.3);
-  }
-}
-
 .about-trivia {
   text-align: center;
   color: white;
   padding: 1em 2em 3em 2em;
 }
+
+@media (max-width: 767px) {
+  .about-picture {
+    justify-content: flex-end;
+    aspect-ratio: 5 / 6;
+    font-size: 1.5em;
+    margin-bottom: 3em;
+    /* width: 100%; */
+  }
+  .about-top-image {
+    transform: scale(1.2);
+    transform-origin: 60% 0%;
+    margin-bottom: 0em;
+  }
+  .about-trivia {
+    padding-bottom: 1.5em;
+  }
+}
+
+
 
 .quickfacts-picture {
   position: relative;
@@ -752,7 +761,10 @@ form input[type="submit"] {
     aspect-ratio: 5 / 6;
     font-size: 1.5em;
     background-position: center top;
-  }
+    }
+    .quickfacts-top-image{
+      /* transform-origin: 60% -80; */
+    }
 }
 
 #quickfacts .column.one-third {

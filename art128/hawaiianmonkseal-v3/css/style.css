@@ -585,111 +585,6 @@ form input[type="submit"] {
   padding-top: 8em;
 }
 
-.bg-mountains-to-ocean {
-  padding-top: 20%;
-  background-color: rgba(5, 5, 86, 0.5);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.card-img-top {
-  border-radius: 10px;
-}
-
-.card-title,
-.card-text {
-  color: white;
-  text-align: center;
-}
-
-.card-text i {
-  padding-left: 0.5em;
-}
-
-.column.one-third .card {
-  position: relative;
-  text-align: center;
-}
-
-.card-title {
-  position: absolute;
-  top: 40px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.card-text {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding-bottom: 0;
-}
-
-#quickfacts i {
-  color: white;
-  display: block;
-  font-size: 2em;
-  background-color: rgb(20, 127, 135);
-  padding: 0.5em;
-  border-radius: 100%;
-  width: 2em;
-  height: 2em;
-  margin-bottom: 0.25em;
-}
-
-#quickfacts ul {
-  margin: 0;
-  padding: 0;
-}
-
-#quickfacts li {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  list-style: none;
-  margin: 0 0 1em 0;
-  padding: 0;
-}
-
-#support,
-#bios {
-  color: #fff;
-}
-
-#quickfacts h4 {
-  margin: 0;
-  padding: 0;
-}
-
-#quickfacts p {
-  margin: 0;
-  /* line-height: 1.4; */
-}
-
-.card-img-top {
-  border-radius: 10px;
-}
-
-.bg-mountains {
-  background-size: 100%;
-  background-color: yellow;
-  aspect-ratio: 13 / 5;
-}
-
-.bg-clouds {
-  background-size: 100%;
-  background-color: pink;
-  aspect-ratio: 17/5;
-}
-
-.grid {
-  display: flex;
-  width: 50%;
-  margin: 50px;
-}
-
 .about-picture {
   position: relative;
   background-image: url(../img/bluewaves.gif);
@@ -738,7 +633,61 @@ form input[type="submit"] {
   }
 }
 
+/* QUICK FACTS STYLING SECTION */
 
+.grid {
+  display: flex;
+  width: 50%;
+  margin: 50px;
+}
+
+#quickfacts h4 {
+  margin: 0;
+  padding: 0;
+}
+
+#quickfacts p {
+  margin: 0;
+  /* line-height: 1.4; */
+}
+
+#quickfacts i {
+  color: white;
+  display: block;
+  font-size: 2em;
+  background-color: rgb(20, 127, 135);
+  padding: 0.5em;
+  border-radius: 100%;
+  width: 2em;
+  height: 2em;
+  margin-bottom: 0.25em;
+}
+
+#quickfacts ul {
+  margin: 0;
+  padding: 0;
+}
+
+#quickfacts li {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  list-style: none;
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+
+.quickfacts-top-image {
+  transform: scale(1.4);
+  transform-origin: 60% 150%;
+}
+
+.quickfacts-trivia {
+  text-align: center;
+  color: white;
+  padding: 1em 2em 1em 2em;
+}
 
 .quickfacts-picture {
   position: relative;
@@ -762,21 +711,84 @@ form input[type="submit"] {
     font-size: 1.5em;
     background-position: center top;
     }
-    .quickfacts-top-image{
-      /* transform-origin: 60% -80; */
+    .quickfacts-top-image {
+      transform-origin: 60% 80%;
+    }
+    .quickfacts-trivia {
+      padding-top: 1.5em;
     }
 }
 
 #quickfacts .column.one-third {
 }
 
-.quickfacts-top-image {
-  transform: scale(1.4);
-  transform-origin: 60% 150%;
+/* RESIDENT MONK SEAL STYLING */
+
+#support,
+#bios {
+  color: #fff;
 }
 
-.quickfacts-trivia {
-  text-align: center;
+/* PARALLAX STYLING */
+
+.bg-clouds {
+  background-size: 100%;
+  background-color: pink;
+  aspect-ratio: 17/5;
+  background-image: url(../img/clouds.png);
+}
+
+.bg-mountains {
+  background-size: 100%;
+  background-color: yellow;
+  aspect-ratio: 13 / 5;
+  background-image: url(../img/mountains.png);
+}
+
+.bg-mountains-to-ocean {
+  padding-top: 20%;
+  background-color: rgba(5, 5, 86, 0.5);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/oceanbackground.png);
+}
+
+/* SUPPORT CARDS */
+
+.card-img-top {
+  border-radius: 10px;
+}
+
+.card-img-top {
+  border-radius: 10px;
+}
+
+.card-title,
+.card-text {
   color: white;
-  padding: 1em 2em 1em 2em;
+  text-align: center;
+}
+
+.card-text i {
+  padding-left: 0.5em;
+}
+
+.column.one-third .card {
+  position: relative;
+  text-align: center;
+}
+
+.card-title {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-text {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 0;
 }

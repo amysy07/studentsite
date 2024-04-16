@@ -309,8 +309,20 @@ body {
 
 footer {
   display: block;
-  padding: 1em;
+  padding: 3em;
   background-color: rgba(0, 13, 37, 1);
+}
+
+@media (min-width: 767px) {
+    .site-footer .social-nav ul {
+        display: grid;
+        grid-template-columns: 1fr .5fr .5fr .5fr 2fr;
+        align-items: center;
+    }
+
+    .site-footer .social-nav li:last-child {
+        text-align: right;
+    }
 }
 
 .social-nav ul {
@@ -729,24 +741,35 @@ form input[type="submit"] {
   color: #fff;
 }
 
+.resident-seal-one {
+  transform: scale(.8);
+}
+
+@media (max-width: 767px) {
+  .resident-seal-two {
+    padding-bottom: 5em;
+  }
+}
+
 /* PARALLAX STYLING */
 
 .bg-clouds {
   background-size: 100%;
-  background-color: pink;
-  aspect-ratio: 17/5;
+  /* background-color: pink; */
+  aspect-ratio: 11/5;
   background-image: url(../img/clouds.png);
+  
 }
 
 .bg-mountains {
   background-size: 100%;
-  background-color: yellow;
-  aspect-ratio: 13 / 5;
+  /* background-color: yellow; */
+  aspect-ratio: 9 / 5;
   background-image: url(../img/mountains.png);
 }
 
 .bg-mountains-to-ocean {
-  padding-top: 20%;
+  padding-top: 10%;
   background-color: rgba(5, 5, 86, 0.5);
   background-size: cover;
   background-repeat: no-repeat;
@@ -792,3 +815,4 @@ form input[type="submit"] {
   transform: translate(-50%, -50%);
   padding-bottom: 0;
 }
+

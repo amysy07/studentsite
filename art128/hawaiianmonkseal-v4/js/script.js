@@ -29,6 +29,17 @@ let controller = new ScrollMagic.Controller();
 let timeline = new TimelineMax();
 
 timeline
-  .to('.white-tern', 3, { x: 500 })
-  .to('.bg-rock', 3, { x: -200 });
+  .to('.bg-clouds-left', 3, { y: 50 })
+  .to('.bg-clouds-right', 3, {y: 70}, "-=3")
+  .to('.white-tern', 3, { x: 500 }, "-=3")
+  .to('.bg-rock', 3, { x: -200 }, "-=3")
+  // .to('.bg-mountains-to-ocean', 3, { y: -100 }, "-=3"); white bar shows when i add this to ocean
 
+let scene = new ScrollMagic.Scene({
+  triggerElement: ".bg-wrapper",
+  duration: "100%",
+  triggerHook: .10,
+})
+
+  .setTween(timeline)
+  .addTo(controller);

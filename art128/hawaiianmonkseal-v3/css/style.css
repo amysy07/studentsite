@@ -746,9 +746,14 @@ form input[type="submit"] {
   transform: scale(.8);
 }
 
+.resident-seal-two {
+  padding-right: 3em;
+}
+
 @media (max-width: 767px) {
   .resident-seal-two {
     padding-bottom: 5em;
+    /* transform: scale(.9); */
   }
 }
 
@@ -765,7 +770,7 @@ form input[type="submit"] {
   top: 0;
   left: 0;
   z-index: 10;
-  width: 70%;
+  width: 80%;
   background-size: 100%;
   /* background-color: pink; */
   aspect-ratio: 11 / 4.7;
@@ -774,14 +779,27 @@ form input[type="submit"] {
 }
 .bg-clouds-right {
   position:absolute;
-  top: 0;
+  top: 5%;
   right: 0;
   z-index: -10;
-  width: 40%;
+  width: 35%;
   background-size: 100%;
   /* background-color: pink; */
   aspect-ratio: 11 / 5.7;
   background-image: url(../img/cloudsnewright.png);
+  background-repeat: no-repeat;
+}
+
+.white-tern {
+  background-image: url(../img/whitetern.png);
+  position:absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transform: scale(.25);
+  width: 80%;
+  aspect-ratio: 9 / 10;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
@@ -794,7 +812,20 @@ form input[type="submit"] {
   background-size: 100%;
   /* background-color: yellow; */
   aspect-ratio: 9 / 6;
-  background-image: url(../img/mountainsnew.png);
+  background-image: url(../img/mountainseditpng.png);
+  background-repeat: no-repeat;
+}
+
+.bg-rock {
+  position:absolute;
+  bottom: -30%;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  background-size: 100%;
+  /* background-color: yellow; */
+  aspect-ratio: 9 / 6;
+  background-image: url(../img/mountainsrock.png);
   background-repeat: no-repeat;
 }
 

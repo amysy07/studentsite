@@ -20,3 +20,15 @@ document.addEventListener("DOMContentLoaded", function () {
     };
   }
 });
+
+// PARALLAX SCROLLING
+
+
+let controller = new ScrollMagic.Controller();
+
+let timeline = new TimelineMax();
+
+timeline
+  .to('.white-tern', 3, { x: 500 })
+  .to('.bg-rock', 3, { x: -200 });
+

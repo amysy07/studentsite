@@ -29,16 +29,16 @@ let controller = new ScrollMagic.Controller();
 let timeline = new TimelineMax();
 
 timeline
-  .to('.bg-clouds-left', 3, { y: 300 })
-  .to('.bg-clouds-right', 3, { y: 500 }, "-=3")
-  .to('.white-tern', 3, { x: 300 }, "-=3")
-  .to('.bg-rock', 3, { y: -85 }, "-=3")
+  .to('.bg-clouds-left', 4, { y: 300 })
+  .to('.bg-clouds-right', 4, { y: 500 }, "-=4")
+  .to('.white-tern', 4, { x: 300 }, "-=4")
+  .to('.bg-rock', 4, { y: -85 }, "-=4")
   .to('.bg-mountains-to-ocean', 3, { y: -100 }, "-=3");
 
 let scene = new ScrollMagic.Scene({
   triggerElement: ".bg-wrapper",
   duration: "100%",
-  triggerHook: 0,
+  triggerHook: .2,
 })
 
   .setTween(timeline)

@@ -762,7 +762,7 @@ form input[type="submit"] {
 @media (max-width: 767px) {
   .resident-seal-two {
     padding-bottom: 5em;
-    /* transform: scale(.9); */
+    transform: scale(.9);
   }
 }
 
@@ -870,7 +870,7 @@ form input[type="submit"] {
 .bg-mountains-to-ocean::after {
   content: "";
   position: absolute;
-  bottom: -200px;
+  /* bottom: -200px; */
   left: 0;
   background: linear-gradient(#141d31, rgb(0, 13, 37));;
   width: 100%;
@@ -895,7 +895,7 @@ form input[type="submit"] {
   border-radius: 10px;
 }
 
-.card-title {
+.card-title, .card-text {
   color: white;
   text-align: center;
 }
@@ -932,9 +932,10 @@ form input[type="submit"] {
   padding-bottom: 0;
 }
 
+
 /* CARD ANIMATION */
 
-.card {
+/* .card {
   display: grid;
   border-radius: 1rem;
   overflow: hidden;
@@ -948,8 +949,9 @@ form input[type="submit"] {
 
 .card:hover .card-title {
   --_i: 0%;
+
 }
 .card:hover img {
   transform: scale(1.2);
-}
+} */
 

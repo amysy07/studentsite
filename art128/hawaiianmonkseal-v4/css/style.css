@@ -587,6 +587,10 @@ form input[type="submit"] {
   max-width: 100px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .site-main .hero {
   background-image: url(../img/monksealhero.gif);
   background-size: cover;
@@ -737,7 +741,7 @@ form input[type="submit"] {
       transform: scale(1.3);
     }
     .quickfacts-trivia {
-      padding-top: 1.5em;
+    padding-top: 1.5em;
     }
     .parent-grid {
     padding-bottom: 1.5em;
@@ -805,6 +809,7 @@ form input[type="submit"] {
   position: relative;
   aspect-ratio: 6 / 4;
   /* border: 5px solid red; */
+  width: 100%;
 } 
 
 .bg-clouds-left {
@@ -815,7 +820,7 @@ form input[type="submit"] {
   width: 80%;
   background-size: 100%;
   /* background-color: pink; */
-  border: 1px solid red;
+  /* border: 5px solid red; */
   aspect-ratio: 11 / 6;
   background-image: url(../img/cloud2newleft.png);
   background-repeat: no-repeat;
@@ -828,7 +833,7 @@ form input[type="submit"] {
   width: 40%;
   background-size: 100%;
   /* background-color: pink; */
-  border: 1px solid green;
+  /* border: 1px solid green; */
   aspect-ratio: 11 / 7;
   background-image: url(../img/cloud2newright.png);
   background-repeat: no-repeat;
@@ -840,7 +845,7 @@ form input[type="submit"] {
   top: 0;
   left: -200px;
   /* z-index: 0; */
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   transform: scale(.25);
   width: 80%;
   aspect-ratio: 9 / 10;
@@ -850,34 +855,35 @@ form input[type="submit"] {
 
 .bg-mountains {
   position:absolute;
-  bottom: -30%;
+  bottom: -40%;
   left: 0;
   z-index: -1;
   width: 100%;
   background-size: 100%;
   /* background-color: yellow; */
-  border: 1px solid blue;
-  aspect-ratio: 9 / 6;
+  /* border: 5px solid blue; */
+  aspect-ratio: 9 / 10;
   background-image: url(../img/mountainseditpng.png);
   background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
 .bg-ocean {
   position:absolute;
-  bottom: -30%;
+  bottom: -45.5%;
   left: 0;
   z-index: 0;
   width: 100%;
   background-size: 100%;
-  /* background-color: yellow; */
-  aspect-ratio: 9 / 6;
+  aspect-ratio: 9 / 10;
   background-image: url(../img/mountainocean.png);
   background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
 .bg-rock {
   position:absolute;
-  bottom: -45%;
+  bottom: -25%;
   /* left: 0; */
   z-index: -1;
   width: 100%;
@@ -890,7 +896,7 @@ form input[type="submit"] {
 }
 
 .bg-mountains-to-ocean {
-  padding-top: 30%;
+  padding-top: 20%;
   /* background-color: rgba(5, 5, 86, 0.5); */
   /* border: 1px solid orange; */
   background-size: cover;
@@ -914,6 +920,10 @@ form input[type="submit"] {
 @media (max-width: 767px) {
   .bg-mountains-to-ocean {
     padding-top: 80%;
+  }
+  .bg-ocean {
+    aspect-ratio: 9 / 6;
+    /* border: 1px solid red; */
   }
 }
 

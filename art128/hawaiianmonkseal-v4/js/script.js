@@ -33,7 +33,7 @@ timeline
   .to('.bg-clouds-right', 4, { y: 500 }, "-=4")
   .to('.white-tern', 4, { x: 300 }, "-=4")
   .to('.bg-rock', 4, { y: -80 }, "-=4")
-  .to('.bg-mountains-to-ocean', 3, { y: -100 }, "-=3");
+  .to('.bg-mountains-to-ocean', 3, { y: -150 }, "-=3");
 
 let scene = new ScrollMagic.Scene({
   triggerElement: ".bg-wrapper",

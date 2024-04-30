@@ -365,6 +365,8 @@ address {
   font-style: normal;
 }
 
+
+
 .site-nav a,
 .social-nav a {
   padding: 1em;
@@ -660,6 +662,10 @@ body {
 
 /* QUICK FACTS STYLING SECTION */
 
+#quickfacts {
+  margin-bottom: 5em;
+}
+
 .grid {
   display: flex;
   width: 50%;
@@ -926,6 +932,9 @@ body {
     aspect-ratio: 9 / 6;
     /* border: 1px solid red; */
   }
+  .bg-rock {
+    bottom: -30%;
+  }
 }
 
 /* SUPPORT CARDS */
@@ -998,43 +1007,26 @@ body {
   transform: scale(1.2);
 } */
 
-
-
-span {
-  display: inline-block;
-  opacity: 0;
-  filter: blur(4px);
+/* Flashing */
+.card:hover img {
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
 }
-
-span:nth-child(1) {
-  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
 }
-
-span:nth-child(2) {
-  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
 }
-
-span:nth-child(3) {
-  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(4) {
-  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(5) {
-  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-span:nth-child(6) {
-  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-
-@keyframes fade-in {
-  100% {
-    opacity: 1;
-    filter: blur(0);
-  }
-}
-
 

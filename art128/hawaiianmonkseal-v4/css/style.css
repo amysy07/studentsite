@@ -892,7 +892,7 @@ body {
 .white-tern {
   background-image: url(../img/whitetern.png);
   position:absolute;
-  top: 0;
+  top: -50px;
   left: -200px;
   /* z-index: 0; */
   /* border: 1px solid yellow; */

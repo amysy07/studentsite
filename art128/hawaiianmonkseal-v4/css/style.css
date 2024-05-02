@@ -76,7 +76,7 @@ h2::after {
 
 h3 {
   font-size: 1.5em;
-  line-height: 1.2;
+  line-height: 1.3;
   color: white;
   text-align: left;
   font-family: "Raleway", sans-serif;
@@ -210,8 +210,6 @@ img {
   height: auto;
 }
 
-/* BUTTONS */
-/* LAYOUT */
 
 /* SIMPLE RESET */
 * {
@@ -370,7 +368,7 @@ address {
   justify-content: center;
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -512,6 +510,54 @@ section {
   content: "\2715";
 }
 
+/* BUTTON */
+.button,
+form input[type=submit] {
+    font-size: inherit;
+    line-height: 1;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    background-color: rgb(255, 255, 255, 0.8);
+    color: rgb(255 255 255 /1);
+    padding: 0.5em;
+    margin: .5em .5em .5em 0;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    border-radius: 0.5em;
+    width: 100px;
+}
+
+.button:hover,
+form input[type=submit]:hover {
+    border: 1px solid rgb(255, 255, 255, 1);
+    background-color: rgb(255, 255, 255, 1);
+    color: rgb(255 255 255 /0.8);
+    text-decoration: none;
+}
+.button.alt {
+    border: 1px solid rgb(255, 255, 255, 0.8);
+    background: transparent;
+    color: rgb(255, 255, 255, 0.8);
+  
+}
+
+.button.alt:hover {
+    border: 1px solid rgb(255, 255, 255, .8);
+    background: rgb(255, 255, 255, .8);
+    color:  rgb(0, 11, 90);
+}
+
+.button.alt {
+  margin-top: 2em;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
 /* FORMS */
 
 form {
@@ -571,17 +617,6 @@ form input[type="submit"] {
   background-color: rgba(0, 0, 0, 0);
 }
 
-/* .site-header.sticky + main {
-  padding-top: 3em;
-} */
-
-/* #about {
-  background: rgba(0, 0, 0, 0.05);
-}
-
-#contact {
-  background: rgba(0, 0, 0, 0.01);
-} */
 
 /* Vertical Media Query add height/paddint to ottom of contact section only for lg screens */
 
@@ -993,28 +1028,6 @@ body {
   padding-bottom: 0;
 }
 
-
-/* CARD ANIMATION */
-
-/* .card {
-  display: grid;
-  border-radius: 1rem;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.card > * {
-  grid-area: 1/1;
-  transition: 0.4s;
-}
-
-.card:hover .card-title {
-  --_i: 0%;
-
-}
-.card:hover img {
-  transform: scale(1.2);
-} */
 
 /* Flashing */
 .card:hover img {

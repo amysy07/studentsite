@@ -77,6 +77,15 @@ h2::after {
 h3 {
   font-size: 1.5em;
   line-height: 1.2;
+  color: white;
+  text-align: left;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
+  text-shadow: 0em 0em 0.2em rgb(0 0 0 /0.3);
+  animation-name: animation-h1;
+  animation-duration: 2s;
 }
 h4 {
   font-size: 1.3125em;
